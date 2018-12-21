@@ -1,0 +1,9 @@
+query {
+  user(login:"dkrikun") {
+    repositories(first:100, isFork:true) {
+      nodes {
+          nameWithOwner
+      }
+    }
+  }
+}
